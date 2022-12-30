@@ -11,7 +11,7 @@ function Form({ addContact, contacts }) {
   const onChangeInput = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
-  
+
   const onSubmit = (e) => {
     e.preventDefault(); //form elementi kayıt yaptığında ynilenmesini durdurur.
     if (form.fullname === "" || form.phone_number === "") {
