@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Contacts from "..";
+import styles from "./styles.module.css";
 const initialFormValues = { fullname: "", phone_number: "" };
 function Form({ addContact, contacts }) {
   const [form, setForm] = useState(initialFormValues);
@@ -44,6 +45,7 @@ function Form({ addContact, contacts }) {
           <button onClick={onSubmit}>Add</button>
         </div>
       </form>
+      <div className={styles.title}>B</div>
     </div>
   );
 }
